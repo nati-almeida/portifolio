@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Portfolio Natália Almeida</title>
+</head>
+
+<script text="javascript">
+    function abrirMenu() {
+        var click = document.getElementById("click");
+        click.addEventListener("click", function () {
+            var conteudo = document.getElementById("conteudo");
+            if (conteudo.style.display === "none")
+                conteudo.style.display = "block";
+            else {
+                conteudo.style.display = "none";
+            }
+        })
+    };
+</script>
+
+<body>
+
+    <div class="container">
+
+        <div class="hamburguer" id="click" onclick="abrirMenu()">
+            <div class="line" id="line"></div>
+            <div class="line" id="line"></div>
+            <div class="line" id="line"></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="img-wrapper">
+            <img src="./imagens/capa.jpg" alt="">
+        </div>
+        <div class="banner">
+            <h1>Analista de Sistemas</h1>
+            <p>Natália Almeida</p>
+        </div>
+    </header>
+
+    <div id="conteudo" class="conteudo">
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Sobre mim</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="https://www.instagram.com/nah_tih/"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/nati-almeida"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/nataliaalmeida1903"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </aside>
+    </div>
+
+    <section class="sessao-conhecimentos" id="conhecimentos">
+        <div class="sessao-header">
+            <h1>Um pouco sobre mim...</h1>
+        </div>
+        <div class="row">
+            <div class="conhecimentos">
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Hello Word!!
+                        <p>Olá Mundo. Me chamo Natália, tenho 31 anos, e migrei recentemente de área...</p>
+                        <p>
+                            Sou estudante de ADS, estou no início de uma carreira brilhante.
+                            Disposta a evoluir minhas habilidades e conhecimento!</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Assim como o CSS, ter uma boa apresentação, com detalhes e tornar algo mais agradável, assim
+                            sou eu. Busco harmonia no ambiente de trabalho, tornando a convivência mais leve e cheia de
+                            cor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="conhecimentos">
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-js"></i>
+                        <h3>Javascript</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>Uma boa lógica de programação é fundamental para o desenvolvimento.
+                            E falando em desenvolvimento, posso afirmar que sou uma pessoa que busca
+                            desenvolver habilidades, e confesso que tenho muito o que aprender, mas também posso
+                            contribuir
+                            com algo. Resiliência é algo muito presente em minha personalidade, acredito que além da
+                            lógica de
+                            programação, devemos ter a flexibilidade em nos adaptar.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fa fa-suitcase"></i>
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="conhecimento-text">
+                        <p>SUCESSO!</p>
+                        <p>É o que desejo a todos os projetos. Atuando com gestão de projetos,
+                            venho aplicando conhecimento e habilidades da minha primeira graduação (ADM).
+                            Compreendo que saber utilizar recursos é o ponto chave para o sucesso.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conhecimentos-img-wrapper">
+
+        </div>
+
+    </section>
+    <section class="sessao-contato" id="contato">
+
+        <div class="contato-wrapper">
+            <div class="contato-left"></div>
+            <div class="contato-right">
+
+                <div class='contato-center'>
+                    <form class='formularioContato' method="post">
+                        <h1>Contato</h1>
+                        <div class="input-group">
+                            <label for="nome" class="field-label">Nome</label>
+                            <input type="text" class="field" id="nome">
+                        </div>
+                        <div class="input-group">
+                            <label for="email" class="field-label">E-mail</label>
+                            <input type="text" class="field" id="email">
+
+                        </div>
+                        <div class="input-group">
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                            <textarea class="field" style="resize: none" id="mensagem"></textarea>
+
+                        </div>
+                        <button type="submit" class="btn btn-submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="" script.js></script>
+
+</html>
